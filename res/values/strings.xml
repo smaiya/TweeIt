@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TweeIt</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login to Twitter</string>
+    <string name="signin_button_label">Sign in</string>
+    <string name="hello_label">Hello.</string>
+    <string name="welcom_string">Welcome to TweetIt.</string>
+    <string name="title_activity_timeline">Home</string>
+    <string name="profile_pic">Profile Picture</string>
+    <string name="compose_title">Compose</string>
+    <string name="compose_hint">What\'s happening?</string>
+    <string name="cancel_title">Cancel</string>
+    <string name="send_title">Send</string>
+    <string name="title_activity_tweet_compose">New Tweet</string>
+    <string name="title_activity_tweet_detailed_view">Tweet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="reply_button_label">Reply</string>
+    <string name="statuses_count">"Reply Count: "</string>
+    <string name="favourite_label">Favourite</string>
+
+</resources>
