@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="7dp">
+    android:padding="7dp" >
 
     <ImageView
         android:id="@+id/ivProfilePic"
@@ -20,8 +20,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivProfilePic"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUserScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvUser"
+        android:layout_toRightOf="@+id/tvUser"
+        android:layout_marginLeft="2dp"
+        android:textColor="#666666"
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/tvTweet"
@@ -29,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvUser"
         android:layout_toRightOf="@+id/ivProfilePic"
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/tvTime"
@@ -37,18 +47,75 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:textColor="@android:color/tertiary_text_light"
-        android:textSize="12sp" />
+        android:textColor="#666666"
+        android:textSize="10sp" />
 
-    <TextView
-        android:id="@+id/tvRetweetCount"
+    <ImageView
+        android:id="@+id/ivPics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTweet"
+        android:layout_below="@+id/tvTweet" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivPics"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/tvTweet"
-        android:text="@string/statuses_count"
-        android:textSize="12sp"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_below="@+id/ivPics" >
+
+        <ImageView
+            android:id="@+id/ivReply"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_reply_grey" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/ivRetweet"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_retweet_grey" />
+
+            <TextView
+                android:id="@+id/tvRetweet"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivRetweet"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvFavorite"
+            android:src="@drawable/ic_fav_grey" />
+
+        <TextView
+            android:id="@+id/tvFavorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#666"
+            android:textSize="12sp" />
+    </RelativeLayout>
 
 </RelativeLayout>

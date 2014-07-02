@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@+id/miLogout "
-        android:icon="@drawable/ic_action_logout"
-        android:showAsAction="ifRoom"
-        android:onClick="onLogout"
-        android:title="@string/compose_title">
-    </item>
     
     <item
         android:id="@+id/miCompose"
         android:icon="@drawable/ic_action_compose"
-        android:showAsAction="ifRoom"
-        android:onClick="onCompose"
+        android:showAsAction="always"
         android:title="@string/compose_title">
+    </item>
+    
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_action_profile"
+        android:showAsAction="always"
+        android:title="@string/profile_title">
+    </item>
+    
+    <item
+        android:id="@+id/miLogout"
+        android:icon="@drawable/ic_action_logout"
+        android:showAsAction="always"
+        android:title="@string/logout_title">
     </item>
 </menu>

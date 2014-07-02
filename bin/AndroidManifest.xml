@@ -15,9 +15,9 @@
         android:allowBackup="true"
         android:icon="@drawable/twitter_icon"
         android:label="@string/app_name"
-        android:theme="@style/Theme.HighlightCopy" >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.smaiya.example.tweeit.LoginActivity"
+            android:name="com.smaiya.tweeit.views.LoginActivity"
             android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,16 +36,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.smaiya.example.tweeit.TimelineActivity"
+            android:name="com.smaiya.tweeit.views.TimelineActivity"
             android:label="@string/title_activity_timeline" >
         </activity>
         <activity
-            android:name="com.smaiya.example.tweeit.TweetComposeActivity"
+            android:name="com.smaiya.tweeit.views.TweetComposeActivity"
             android:label="@string/title_activity_tweet_compose" >
         </activity>
         <activity
-            android:name="com.smaiya.example.tweeit.TweetDetailedViewActivity"
-            android:label="@string/title_activity_tweet_detailed_view" >
+            android:name="com.smaiya.tweeit.TweetDetailedViewActivity"
+            android:label="@string/title_activity_tweet_detailedview" >
+        </activity>
+        <activity
+            android:name="com.smaiya.tweeit.views.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
         </activity>
     </application>
 
